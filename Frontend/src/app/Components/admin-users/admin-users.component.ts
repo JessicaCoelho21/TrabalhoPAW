@@ -30,7 +30,7 @@ export class AdminUsersComponent implements OnInit {
 
   getAdminList(){
     this.users = [];
-    this.stats= null;
+    this.stats = null;
     this.rest.getListAdmin().subscribe((data: {}) => {
       this.users = data;
       this.router.navigate(['/admin/users']);
@@ -39,7 +39,7 @@ export class AdminUsersComponent implements OnInit {
 
   getTechnicList(){
     this.users = [];
-    this.stats= null;
+    this.stats = null;
     this.rest.getListTechnic().subscribe((data: {}) => {
       this.users = data;
       this.router.navigate(['/admin/users']);
@@ -47,7 +47,7 @@ export class AdminUsersComponent implements OnInit {
   }
 
   getUtenteList(){
-    this.stats= null;
+    this.stats = null;
     this.users = [];
 
     this.rest.getListUtente().subscribe((data: {}) => {
